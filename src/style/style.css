@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: url(/src/images/main-bg.jpg);
+}
+.div-title-header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.title-header {
+  border-radius: 10px;
+  width: 30vw;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 45px;
+  background: url(/src/images/white.webp);
+  background-position: center;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  margin: 15px 0;
+}
+.btn-click-counter {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(58, 58, 58);
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background: url(/src/images/white.webp);
+  background-position: center;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.btn-click-counter:hover {
+  scale: 1.1;
+}
+.div-btn-click-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.div-money-two{
+  color: white;
+}
+.div-money {
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+}
+.indexes-show {
+  height: 500px;
+  width: 25vw;
+  border: 3px solid white;
+  margin-left: 4vw;
+  margin-top: -235px;
+  border-radius: 10px;
+  background: url(/src/images/white.webp);
+  text-align: center;
+}
+.indexes-text, .improvement-text {
+  margin-top: 2px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+.indexes-text-one, .improvement-text-one {
+  margin-top: 10px;
+}
+.improvement {
+  height: 500px;
+  width: 25vw;
+  border: 3px solid white;
+  margin-top: -500px;
+  border-radius: 10px;
+  background: url(/src/images/white.webp);
+  margin-left: 71vw;
+  text-align: center;
+}
+.improvement-btn {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(58, 58, 58) ;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background: url(/src/images/white.webp);
+  background-position: center;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.improvement-btn:hover {
+  scale: 1.1;
+}
