@@ -103,3 +103,21 @@ body {
 .improvement-btn:hover {
   scale: 1.1;
 }
+.achievements {
+  height: 500px;
+  width: 25vw;
+  border: 3px solid white;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: url(/src/images/white.webp);
+  margin-left: 71vw;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.achievements-text {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+}
