@@ -60,14 +60,14 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     displayMoney();
     document.querySelector(".improvement-text-one").innerHTML = `Олов'яне покращення`;
     document.querySelector(".improvement-text-two").innerHTML = `70000 монет`;
-    document.querySelector(".improvement-text-four").innerHTML = `За 1 клік +20 монет`
-    document.querySelector(".improvement-text-three").innerHTML = `В одну секунду +8 монети`
+    document.querySelector(".improvement-text-four").innerHTML = `За 1 клік +50 монет`
+    document.querySelector(".improvement-text-three").innerHTML = `В одну секунду +20 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
   }
 })
 document.querySelector('.js-cheats').addEventListener('click', () => {
-  money += 2000;
+  money += 10000;
   displayMoney();
   saveCookiesMoney();
 })
