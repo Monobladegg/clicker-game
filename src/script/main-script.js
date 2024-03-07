@@ -70,8 +70,13 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
   }
 })
-document.querySelector('.js-cheats').addEventListener('click', () => {
+document.querySelector(".js-cheats-10000").addEventListener("click", () => {
   money += 10000;
+  displayMoney();
+  saveCookiesMoney();
+});
+document.querySelector(".js-cheats-0").addEventListener("click", () => {
+  money = 0;
   displayMoney();
   saveCookiesMoney();
 })
