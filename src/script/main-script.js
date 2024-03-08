@@ -1,6 +1,6 @@
 let money = parseInt(document.cookie.match(/money=([0-9]+)/)[1]) || 0
-let autoAddMoney = 1
-let addMoney = 1
+let addMoney = parseInt(document.cookie.match(/addMoney=([0-9]+)/)[1]) || 1
+let autoAddMoney = parseInt(document.cookie.match(/autoAddMoney=([0-9]+)/)[1]) || 1
 let improvementUpdateCounter = 1
 
 document.querySelector('.money').innerHTML = `У вас ${money} Монет`;
@@ -31,6 +31,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +2 монета`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 3000 && improvementUpdateCounter === 2) {
     improvementUpdateCounter++;
     money -= 3000;
@@ -43,7 +45,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +4 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
-    
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 10000 && improvementUpdateCounter === 3) {
     improvementUpdateCounter++;
     money -= 10000;
@@ -56,6 +59,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +8 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 30000 && improvementUpdateCounter === 4) {
     improvementUpdateCounter++;
     money -= 30000;
@@ -68,6 +73,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +15 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 70000 && improvementUpdateCounter === 5) {
     improvementUpdateCounter++;
     money -= 70000;
@@ -80,6 +87,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +25 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 150000 && improvementUpdateCounter === 6) {
     improvementUpdateCounter++;
     money -= 150000;
@@ -92,6 +101,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +40 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 275000 && improvementUpdateCounter === 7) {
     improvementUpdateCounter++;
     money -= 275000;
@@ -104,6 +115,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +60 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 500000 && improvementUpdateCounter === 8) {
     improvementUpdateCounter++;
     money -= 500000;
@@ -116,6 +129,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +80 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   } else if (money >= 1000000 && improvementUpdateCounter === 9) {
     improvementUpdateCounter++;
     money -= 1000000;
@@ -128,6 +143,8 @@ document.querySelector('.improvement-btn').addEventListener('click', () => {
     document.querySelector(".improvement-text-four").innerHTML = `За 1 секунду +100 монети`
     document.querySelector(".indexes-text-one").innerHTML = `За 1 клік - ${addMoney} монет`;
     document.querySelector(".indexes-text-two").innerHTML = `За 1 секунду - ${autoAddMoney} монет`;
+    saveCookiesAddMoneyandAutoAddMoney();
+    saveCookiesImprovementUpdateCounter();
   }
 })
 document.querySelector(".js-cheats-100000").addEventListener("click", () => {
@@ -153,4 +170,11 @@ function saveCookiesMoney() {
 }
 function displayMoney() {
   document.querySelector(".money").innerHTML = `У вас ${money} Монет`;
+}
+function saveCookiesAddMoneyandAutoAddMoney() {
+  document.cookie = `addMoney=${addMoney}; path=/`;
+  document.cookie = `autoAddMoney=${autoAddMoney}; path=/`;
+}
+function saveCookiesImprovementUpdateCounter() {
+  document.cookie = `improvementUpdateCounter=${improvementUpdateCounter}; path=/`;
 }

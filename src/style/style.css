@@ -6,7 +6,7 @@
 body {
   width: 100%;
   height: 100%;
-  background: url(/src/images/main-bg.jpg);
+  background: url(/src/images/vg.webp);
 }
 .div-title-header {
   display: flex;
@@ -15,12 +15,13 @@ body {
   font-weight: bold;
 }
 .title-header {
+  border: 1px black solid;
   border-radius: 10px;
   width: 30vw;
   text-align: center;
   padding: 10px 0;
   font-size: 45px;
-  background: url(/src/images/white.webp);
+  background: url(/src/images/vg.webp);
   background-position: center;
   font-family: 'Rubik', sans-serif;
   color: black;
@@ -33,7 +34,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  background: url(/src/images/white.webp);
+  background: url(/src/images/vg.webp);
   background-position: center;
   font-family: 'Rubik', sans-serif;
   cursor: pointer;
@@ -65,7 +66,7 @@ body {
   margin-left: 4vw;
   margin-top: -235px;
   border-radius: 10px;
-  background: url(/src/images/white.webp);
+  background: url(/src/images/vg.webp);
   text-align: center;
 }
 .indexes-text, .improvement-text {
@@ -84,7 +85,7 @@ body {
   border: 3px solid white;
   margin-top: -500px;
   border-radius: 10px;
-  background: url(/src/images/white.webp);
+  background: url(/src/images/vg.webp);
   margin-left: 71vw;
   text-align: center;
 }
@@ -96,7 +97,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  background: url(/src/images/white.webp);
+  background: url(/src/images/vg.webp);
   background-position: center;
   font-family: 'Rubik', sans-serif;
   cursor: pointer;
@@ -106,18 +107,18 @@ body {
   scale: 1.1;
 }
 .achievements {
-  height: 500px;
+  height: 100px;
   width: 25vw;
   border: 3px solid white;
   margin-top: 10px;
   border-radius: 10px;
-  background: url(/src/images/white.webp);
+  background: url(/src/images/vg.webp);
   margin-left: 71vw;
   text-align: center;
   margin-bottom: 20px;
 }
 .achievements-text-title {
-  margin-top: 25px;
+  margin-top: 30px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 30px;
