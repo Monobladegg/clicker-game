@@ -1,4 +1,4 @@
-let money = parseInt(document.cookie.match(/money=([0-9]+)/)[1]) || 0
+let money = parseInt(document.cookie.match(/money=([0-9]+)/)[1]) || 1
 let addMoney = parseInt(document.cookie.match(/addMoney=([0-9]+)/)[1]) || 1
 let autoAddMoney = parseInt(document.cookie.match(/autoAddMoney=([0-9]+)/)[1]) || 1
 let improvementUpdateCounter = 1
